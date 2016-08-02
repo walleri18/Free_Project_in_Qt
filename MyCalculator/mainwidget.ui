@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>666</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS UI Gothic</family>
+    <pointsize>12</pointsize>
+    <weight>50</weight>
+    <italic>true</italic>
+    <bold>false</bold>
+    <underline>false</underline>
+    <strikeout>false</strikeout>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string comment="Мой первый калькулятор на Qt 5" extracomment="Мой первый калькулятор на Qt 5">Самый простой калькулятор</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="myresourcefile.qrc">
+    <normaloff>:/file/icon/resource/calculator.ico</normaloff>:/file/icon/resource/calculator.ico</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLCDNumber" name="lcdDisplay">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>10</number>
+       </property>
+       <property name="midLineWidth">
+        <number>10</number>
+       </property>
+       <property name="smallDecimalPoint">
+        <bool>true</bool>
+       </property>
+       <property name="digitCount">
+        <number>9</number>
+       </property>
+       <property name="mode">
+        <enum>QLCDNumber::Dec</enum>
+       </property>
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Filled</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMaximumSize</enum>
+           </property>
+           <item>
+            <widget class="QPushButton" name="numberOne">
+             <property name="maximumSize">
+              <size>
+               <width>101</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>&amp;1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberTwo">
+             <property name="text">
+              <string>&amp;2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberThree">
+             <property name="text">
+              <string>&amp;3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="numberFour">
+             <property name="text">
+              <string>&amp;4</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberFive">
+             <property name="text">
+              <string>&amp;5</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberSix">
+             <property name="text">
+              <string>&amp;6</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMaximumSize</enum>
+           </property>
+           <item>
+            <widget class="QPushButton" name="numberSeven">
+             <property name="text">
+              <string>&amp;7</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberEight">
+             <property name="text">
+              <string>&amp;8</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="numberNine">
+             <property name="text">
+              <string>&amp;9</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="numberZero">
+           <property name="text">
+            <string>&amp;0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="operationClear">
+           <property name="text">
+            <string>&amp;CE</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="operationPlus">
+           <property name="text">
+            <string>&amp;+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="operationMinus">
+           <property name="text">
+            <string>&amp;-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="operationMulti">
+           <property name="text">
+            <string>&amp;*</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="operationDel">
+           <property name="text">
+            <string>&amp;/</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myresourcefile.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>numberOne</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberTwo</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberThree</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberFour</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberFive</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberSix</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberSeven</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberEight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberNine</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>numberZero</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>598</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>operationClear</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>operationPlus</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>operationMinus</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>operationMulti</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>operationDel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWidget</receiver>
+   <slot>keystrokes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>573</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lcdDisplay</sender>
+   <signal>overflow()</signal>
+   <receiver>operationClear</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>calculate()</signal>
+  <slot>keystrokes()</slot>
+ </slots>
+</ui>
